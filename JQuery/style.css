@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+.artigo1{
+    width: 100%;
+    background: rgb(200, 200, 200);
+}
+
+.artigo2{
+    background: rgb(100, 100, 100);
+    margin-top: 190px;
+}
