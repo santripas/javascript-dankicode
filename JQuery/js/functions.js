@@ -1,26 +1,10 @@
 $(function(){
    
-    function validarCliqueHover(){
+   //var elWidth = $('.box').width();
+    $('.box').width('900');
 
-        $('.artigo1').click(function(){
-            $('.artigo2').css('background-color','purple');
-        });
+    $('.box').css('width','900px');
 
-        $('.artigo1').hover(function(){
-            $('.artigo2').css('background-color','red');
-        },function(){
-            $('.artigo2').css('background-color','rgb(100,100,100)');
-        })
-    }
-
-    function validarFormulario(){
-
-        $('select').change(function(){
-            console.log("Meu select foi alterado!");
-        })
-    }
-    validarFormulario();
-    validarCliqueHover();
-
+    console.log($('.box').width());
 
 });
