@@ -1,14 +1,9 @@
 $(function(){
    
-   var el = $('.box');
-   var meutexto = 'Olá mundo!';
+   //var teste = $('<h3>Meu conteúdo</h3>').appendTo($('.box')).css('color','red');
 
-    el.html("<div class=\"teste\">"+meutexto+"</div>");
-    el.html('<h1 class="texto1">Meu texto via javascript!</h1>');
+  // $('.box').prepend('<h3>Olá mundo!</h3>');
 
-    $('.box2').text("<div></div>");
-    $('.box2').text("Olá mundo!");
-
-    console.log(el.text());
+    $('.box').eq(1).remove();
 
 });
