@@ -1,10 +1,14 @@
 $(function(){
    
-   //var elWidth = $('.box').width();
-    $('.box').width('900');
+   var el = $('.box');
+   var meutexto = 'Olá mundo!';
 
-    $('.box').css('width','900px');
+    el.html("<div class=\"teste\">"+meutexto+"</div>");
+    el.html('<h1 class="texto1">Meu texto via javascript!</h1>');
 
-    console.log($('.box').width());
+    $('.box2').text("<div></div>");
+    $('.box2').text("Olá mundo!");
+
+    console.log(el.text());
 
 });
