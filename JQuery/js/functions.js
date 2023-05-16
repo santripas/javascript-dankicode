@@ -1,11 +1,28 @@
 $(function(){
     
-    $.ajax({
-        'url':'conteudo.html',
-        //'method':'post',
-        //data:{'nome':'sandro','idade':'23'}
+    abrirJanela();
+    verificarCliqueFechar();
 
-    }).done(function(data){
-        console.log(data);
-    });
+    function abrirJanela(){
+        $('.btn').click(function(e){
+            e.stopPropagation();
+            $('.bg').fadeIn();
+        });
+
+    }
+
+    function verificarCliqueFechar(){
+
+        var el = $('body,.closeBtn');
+
+        el.click(function(){
+            $('.bg').fadeOut();
+        })
+
+        $('.form').click(function(e){
+            e.stopPropagation();
+        })
+
+    }
+ 
 });
