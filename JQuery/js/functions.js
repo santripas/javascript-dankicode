@@ -1,6 +1,11 @@
 $(function(){
     
-    var el = $('#source .texto').clone();
+    $.ajax({
+        'url':'conteudo.html',
+        //'method':'post',
+        //data:{'nome':'sandro','idade':'23'}
 
-    $('#container').html(el.html());
+    }).done(function(data){
+        console.log(data);
+    });
 });
