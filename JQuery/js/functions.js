@@ -8,9 +8,19 @@ $(function(){
     });
     */
 
-    $('.box1').click(function(){
-        $('.box2').slideToggle();
-    })
+    var timeOut = function(){
+        $('.box2').animate({
+            'width':'40%',
+            'height':'500px'
+        },2000);
+    }
+
+    $('.box1').animate({
+        'width':'40%',
+        'height':'500px'
+    },2000,function(){
+       setTimeOut(timeOut,3000);
+    });
 
    
 });
