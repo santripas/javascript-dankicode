@@ -12,10 +12,14 @@ html,body{
 
 .box{
    width: 100%;
-   padding: 20px;
-   background: #ccc;
+   padding: 40px 3%;
+   background: rgb(210, 210, 210);
+   color: black;
+   text-align: center;
 }
 
-h1.texto1{
-    color: red;
+.box2{
+    background-color: black;
+    display: none;
+    color: white;
 }
