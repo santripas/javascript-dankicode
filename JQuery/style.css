@@ -10,16 +10,3 @@ html,body{
     height: 100%;
 }
 
-.box{
-   width: 100%;
-   padding: 40px 3%;
-   background: rgb(210, 210, 210);
-   color: black;
-   text-align: center;
-}
-
-.box2{
-    background-color: black;
-    display: none;
-    color: white;
-}
