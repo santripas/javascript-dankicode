@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+</head>
+<body>
+	<h1 id="main-text">Olá, </h1>
+	<div class="teste">
+		<p>Olá!</p>
+	</div>
+	<p>Hey ow!</p>
+	<script>
+		window.onload = function(){
+			//Documento carregado.
+
+			var el = document.getElementById('main-text');
+			el.innerHTML = el.innerHTML + "Guilherme";
+
+			el.style.background = "green";
+			el.style.marginLeft = "20px";
+			el.style.border = "3px solid red";
+
+			//var el2 =document.querySelectorAll('p');
+
+			for(var i = 0; i < elementos.length; i++){
+				elementos[i].style.background = "gold";
+			}
+
+
+		}
+		</script>
+</body>
+</html>
